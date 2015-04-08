@@ -1,12 +1,5 @@
 source 'https://rubygems.org'
 
-p '--------'
-p '--------'
-p "ENV['USER']: #{ENV['USER']}"
-p '--------'
-p '--------'
-p '--------'
-
 gem 'nokogiri', '~> 1.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -122,6 +115,15 @@ if File.exist?(database_file)
   else
     warn("No adapter found in config/database.yml, please configure it first")
   end
+elsif ENV['USER'] == 'deploy'
+  p '--------'
+  p '--------'
+  p "ENV['USER']: #{ENV['USER']}"
+  p '--------'
+  p '--------'
+  p '--------'
+
+  gem "mysql2", '~> 0.3'
 else
   warn("Please configure your config/database.yml first")
 end
