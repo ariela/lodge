@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+p '--------'
+p '--------'
+p "ENV['USER']: #{ENV['USER']}"
+p '--------'
+p '--------'
+p '--------'
 
 gem 'nokogiri', '~> 1.6'
 
