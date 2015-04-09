@@ -22,3 +22,13 @@ notifications:
   on_success: always  # options: [always|never|change] default: always
   on_failure: always  # options: [always|never|change] default: always
   on_start: false     # default: false
+deploy:
+  provider: opsworks
+  access_key_id: AKIAISHOIMCAP2ZTDBIQ
+  secret_access_key:
+    secure: T66WKJYl/VSKd058mu8MYGy2cVhCbQRRnriVaGSN+ZmvxUwVBbVh321OIAT8TfMX4uAF8uTDZe9pPHUBQaxTwsas6VlevbPsH8NEtycTwbooeaNQ2EB3JP8kAIWEHF5XBI7MbiOG4uol0tkN4lA22A0v57GSJUoOPFk7P2I5RZ4=
+  app-id: lodge
+  migrate: true
+  on:
+    repo: usutani/lodge
+    branch: travis
