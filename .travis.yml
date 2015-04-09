@@ -15,6 +15,3 @@ notifications:
   webhooks:
     urls:
       - https://webhooks.gitter.im/e/7e569f9f53d7c2c902a9 
-  on_success: always  # options: [always|never|change] default: always
-  on_failure: always  # options: [always|never|change] default: always
-  on_start: false     # default: false
