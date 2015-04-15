@@ -154,6 +154,12 @@ http://lodge-sample.herokuapp.com/
     ```
     bundle exec unicorn -c config/unicorn.rb -E production
     ```
+
+    ** サブディレクトリで実行する場合
+    ```
+    RAILS_RELATIVE_URL_ROOT=/lodge bundle exec unicorn -c config/unicorn.rb -E production
+    ```
+
   * Thin を使う場合
 
     ```
